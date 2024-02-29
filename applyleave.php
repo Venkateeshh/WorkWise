@@ -10,14 +10,14 @@
 
 <html>
 <head>
-	<title>Apply Leave | Employee Panel | XYZ Corporation</title>
+	<title>Apply Leave | Employee Panel | WorkWise Corporation</title>
 	<link rel="stylesheet" type="text/css" href="styleapply.css">
 </head>
 <body bgcolor="#F0FFFF">
 	
 	<header>
 		<nav>
-			<h1>Codewizy</h1>
+			<h1>WorkWise</h1>
 			<ul id="navli">
 				<li><a class="homeblack" href="eloginwel.php?id=<?php echo $id?>"">HOME</a></li>
 				<li><a class="homeblack" href="myprofile.php?id=<?php echo $id?>"">My Profile</a></li>

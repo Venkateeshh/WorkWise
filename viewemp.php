@@ -12,13 +12,13 @@ $result = mysqli_query($conn, $sql);
 
 <html>
 <head>
-	<title>View Employee |  Admin Panel | XYZ Corporation</title>
+	<title>View Employee |  Admin Panel | WorkWise Corporation</title>
 	<link rel="stylesheet" type="text/css" href="styleview.css">
 </head>
 <body>
 	<header>
 		<nav>
-			<h1>Codewizy</h1>
+			<h1>WorkWise</h1>
 			<ul id="navli">
 				<li><a class="homeblack" href="aloginwel.php">HOME</a></li>
 				<li><a class="homeblack" href="addemp.php">Add Employee</a></li>

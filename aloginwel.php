@@ -7,14 +7,14 @@ $result = mysqli_query($conn, $sql);
 
 <html>
 <head>
-	<title>Admin Panel | XYZ Corporation</title>
+	<title>Admin Panel | WorkWise Corporation</title>
 	<link rel="stylesheet" type="text/css" href="styleemplogin.css">
 </head>
 <body>
 	
 	<header>
 		<nav>
-			<h1>Codewizy</h1>
+			<h1>WorkWise</h1>
 			<ul id="navli">
 				<li><a class="homered" href="aloginwel.php">HOME</a></li>
 				<li><a class="homeblack" href="addemp.php">Add Employee</a></li>

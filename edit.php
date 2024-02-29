@@ -66,7 +66,7 @@ $result = mysqli_query($conn, "UPDATE `employee` SET `firstName`='$firstname',`l
 
 <html>
 <head>
-	<title>View Employee |  Admin Panel | XYZ Corporation</title>
+	<title>View Employee |  Admin Panel | WorkWise Corporation</title>
 	<!-- Icons font CSS-->
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
     <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
@@ -83,7 +83,7 @@ $result = mysqli_query($conn, "UPDATE `employee` SET `firstName`='$firstname',`l
 <body>
 	<header>
 		<nav>
-			<h1>Codewizy</h1>
+			<h1>WorkWise</h1>
 			<ul id="navli">
 				<li><a class="homeblack" href="index.html">HOME</a></li>
 				<li><a class="homeblack" href="addemp.php">Add Employee</a></li>
