@@ -1,6 +1,11 @@
 <?php
 
 require_once ('process/dbh.php');
+$sql = "UPDATE `salary`\n"
+
+    . "SET `total` = `base` + (`base` * `bonus` / 100)\n"
+
+    . "WHERE `total` <> `base` + (`base` * `bonus` / 100);";
 $sql = "SELECT employee.id,employee.firstName,employee.lastName,salary.base,salary.bonus,salary.total from employee,`salary` where employee.id=salary.id";
 
 //echo "$sql";
