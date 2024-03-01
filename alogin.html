@@ -3,6 +3,25 @@
 <head>
 	<title>Log In | WorkWise Corporation</title>
 	<link rel="stylesheet" type="text/css" href="stylelogin.css">
+	<style>
+		.alert {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  color: red;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  top: 0;
+  right: 120%;
+  z-index: 1;
+}
+
+.alert.show {
+  display: block;
+}
+
+	</style>
 </head>
 <body>
 	<header>
@@ -25,11 +44,25 @@
             <p>Email</p>
             <input type="text" name="mailuid" placeholder="Enter Email Address" required="required">
             <p>Password</p>
-            <input type="password" name="pwd" placeholder="Enter Password" required="required">
+            <input type="password" name="pwd" placeholder="Enter Password" required="required" minlength="8" maxlength="8">
+			<div id="alert" class="alert">Minimum 8 characters required</div>
             <input type="submit" name="login-submit" value="Login">
            
         </form>
         
     </div>
+	<script>
+		const passwordInput = document.getElementById('pwd');
+		const alert = document.getElementById('alert');
+
+		passwordInput.addEventListener('input', function() {
+		if (passwordInput.value.length < 8) {
+			alert.classList.add('show');
+		} else {
+			alert.classList.remove('show');
+		}
+		});
+
+	</script>
 </body>
 </html>
