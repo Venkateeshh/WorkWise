@@ -11,7 +11,24 @@ $start = $_POST['start'];
 //echo "$reason";
 $end = $_POST['end'];
 
-$sql = "INSERT INTO `employee_leave`(`id`,`token`, `start`, `end`, `reason`, `status`) VALUES ('$id','','$start','$end','$reason','Pending')";
+
+
+    if ($end >= $start) {
+      // Insert data only if end date is after or equal to start date
+      $sql = "INSERT INTO `employee_leave`(`id`, `token`, `start`, `end`, `reason`, `status`) VALUES ('$id','','$start','$end','$reason','Pending')";
+      $result = mysqli_query($conn, $sql);
+      if ($result) {
+        echo "Leave request submitted successfully!";
+      } else {
+        echo "Error: An error occurred while submitting the request.";
+      }
+    } else {
+      // Handle the case when end date is before start date
+      echo "<script>alert('Error: End date cannot be before start date.');</script>";
+      
+    }
+
+// $sql = "INSERT INTO `employee_leave`(`id`,`token`, `start`, `end`, `reason`, `status`) VALUES ('$id','','$start','$end','$reason','Pending')";
 
 $result = mysqli_query($conn, $sql);
 
